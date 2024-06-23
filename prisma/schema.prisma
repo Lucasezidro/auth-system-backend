@@ -24,6 +24,7 @@ model User {
   email    String @unique
   password String
 
+  zipCode       String  @map("zip_code")
   street        String
   addressNumber String? @map("address_number")
   neighborhood  String

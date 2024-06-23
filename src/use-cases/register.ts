@@ -7,6 +7,7 @@ interface RegisterUseCaseRequest {
   username: string
   email: string
   password: string
+  zipCode: string
   street: string
   addressNumber: string
   neighborhood: string
@@ -47,6 +48,7 @@ export class RegisterUseCase {
       username: props.username,
       email: props.email,
       password: userPassword,
+      zipCode: props.zipCode,
       street: props.street,
       addressNumber: props.addressNumber,
       neighborhood: props.neighborhood,
